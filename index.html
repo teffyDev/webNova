@@ -20,25 +20,59 @@
             background-repeat: no-repeat;
             color: white;
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-            text-align: center; 
+            text-align: center;
+            font-size: 18px; /* Tamaño de fuente para el cuerpo (aumentado) */
         }
         h1 {
             color: white;
             margin: 0;
+            font-size: 36px; /* Tamaño de fuente para el encabezado (aumentado) */
+        }
+        p {
+            color: #9F715D;
+            margin: 0;
+            font-size: 18px; /* Tamaño de fuente para los párrafos (aumentado) */
+            line-height: 1.6; /* Ajusta la altura de la línea para mejorar la legibilidad */
+        }
+        ul {
+            color: #9F715D;
+            margin: 0;
+            padding: 0;
+            font-size: 18px; /* Tamaño de fuente para las listas (aumentado) */
+            list-style-position: inside; /* Ajusta la posición de las viñetas dentro del contenedor */
+        }
+        li {
+            color: #9F715D;
+            margin: 0;
+            font-size: 18px; /* Tamaño de fuente para los elementos de lista (aumentado) */
+            padding-left: 10px; /* Ajusta el relleno izquierdo para alinear el texto con las viñetas */
         }
         img.logo {
             margin: 20px 0;
-            width: 150px; 
+            width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
         }
-        a {
+        .description {
+            margin: 20px;
+            max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+        }
+        .email-link {
+            color: #9F715D; /* Color del enlace del correo electrónico */
+            text-decoration: underline; /* Subrayar el enlace */
+            font-size: 18px; /* Tamaño de fuente para el enlace del correo electrónico */
+        }
+        .email-link:hover {
+            color: #FFAE6A; /* Color del enlace al pasar el cursor */
+        }
+        .apk-button {
             margin-top: 20px;
             padding: 10px 20px;
             background-color: #FFAE6A; /* Color del botón */
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 18px; /* Tamaño de fuente para el botón (aumentado) */
         }
-        a:hover {
+        .apk-button:hover {
             background-color: #ff8c50; /* Color del botón al pasar el cursor */
         }
     </style>
@@ -46,6 +80,23 @@
 <body>
     <img src="assets/logo.png" alt="Logo de la app" class="logo">
     <h1>Bienvenidos a NovaSentinel</h1>
-    <a href="https://drive.google.com/drive/folders/1omCv2SlDz_IGUL_nYu3cok6LUR6D6ceE?usp=sharing">Acceder al APK</a>
+    <div class="description">
+        <p>Tu seguridad, nuestra prioridad. 🌟</p>
+        <br>
+        <p>En NovaSentinel, estamos comprometidos a ofrecerte la mejor protección en tiempo real. Con nuestras soluciones innovadoras, puedes estar tranquilo sabiendo que tu seguridad está en manos confiables.</p>
+        <br>
+        <p><strong>¿Qué puedes esperar de nosotros?</strong></p>
+        <br>
+        <ul>
+            <li>Alertas Inmediatas: Notificaciones instantáneas para mantenerte siempre informado.</li>
+            <li>Protección de Datos: Tecnología avanzada para asegurar la privacidad y la seguridad de tu información.</li>
+            <li>Botón de Pánico: Una solución rápida para emergencias, siempre a tu alcance.</li>
+        </ul>
+        <br>
+        <p>¿Tienes preguntas o necesitas asistencia? No dudes en contactarnos a través de nuestro correo electrónico: <a href="mailto:novasentinel@gmail.com" class="email-link">novasentinel@gmail.com</a>.</p>
+        <br>
+        <p>¡Gracias por confiar en NovaSentinel!</p>
+    </div>
+    <a href="https://drive.google.com/drive/folders/1omCv2SlDz_IGUL_nYu3cok6LUR6D6ceE?usp=sharing" class="apk-button">Acceder al APK</a>
 </body>
 </html>
